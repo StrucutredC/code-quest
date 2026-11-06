@@ -1,0 +1,14 @@
+export type Challenge = { id:number; title:string; world:string; level:string; xp:number; time:number; description:string; input:string; output:string; hint:string; starter:string; };
+export const challenges:Challenge[] = [
+ {id:1,title:'Detective de números',world:'Fundamentos',level:'INICIACIÓN',xp:100,time:12,description:'Lee un número entero e indica si es positivo, negativo o cero.',input:'Un número entero n.',output:'POSITIVO, NEGATIVO o CERO.',hint:'Compara n con cero usando if, else if y else.',starter:'#include <stdio.h>\n\nint main() {\n    int n;\n    scanf("%d", &n);\n\n    // Escribe tu solución\n\n    return 0;\n}'},
+ {id:2,title:'Suma relámpago',world:'Fundamentos',level:'INICIACIÓN',xp:120,time:10,description:'Recibe dos enteros y muestra la suma de ambos.',input:'Dos números enteros a y b.',output:'La suma a + b.',hint:'Declara tres variables enteras y usa printf con %d.',starter:'#include <stdio.h>\n\nint main() {\n    int a, b;\n    scanf("%d %d", &a, &b);\n\n    // Calcula y muestra la suma\n\n    return 0;\n}'},
+ {id:3,title:'Par o impar',world:'Decisiones',level:'BÁSICO',xp:150,time:12,description:'Determina si un número entero es par o impar.',input:'Un número entero n.',output:'PAR o IMPAR.',hint:'El operador módulo % devuelve el residuo. Si n % 2 es 0, es par.',starter:'#include <stdio.h>\n\nint main() {\n    int n;\n    scanf("%d", &n);\n\n    // Evalúa el residuo\n\n    return 0;\n}'},
+ {id:4,title:'Contador de energía',world:'Ciclos',level:'INTERMEDIO',xp:180,time:15,description:'Lee n y calcula la suma de los enteros desde 1 hasta n.',input:'Un entero positivo n.',output:'La suma de 1 hasta n.',hint:'Usa un ciclo for y un acumulador inicializado en cero.',starter:'#include <stdio.h>\n\nint main() {\n    int n, suma = 0;\n    scanf("%d", &n);\n\n    // Usa un ciclo for\n\n    return 0;\n}'},
+ {id:5,title:'Función secreta',world:'Funciones',level:'INTERMEDIO',xp:220,time:18,description:'Crea una función llamada mayor que reciba dos enteros y regrese el mayor.',input:'Dos enteros a y b.',output:'El mayor de los dos números.',hint:'Declara int mayor(int a, int b) antes de main o agrega un prototipo.',starter:'#include <stdio.h>\n\nint mayor(int a, int b) {\n    // Regresa el mayor\n}\n\nint main() {\n    int a, b;\n    scanf("%d %d", &a, &b);\n    printf("%d\\n", mayor(a, b));\n    return 0;\n}'}
+];
+export const worlds = [
+ {name:'Fundamentos',tag:'01',desc:'Tu primera línea de código',color:'from-violet-500/25 to-indigo-500/5',icon:'⌘',count:'8 retos'},
+ {name:'Decisiones',tag:'02',desc:'Haz que tu programa elija',color:'from-cyan-500/20 to-blue-500/5',icon:'⑂',count:'7 retos'},
+ {name:'Ciclos',tag:'03',desc:'Repite, optimiza, conquista',color:'from-lime-500/15 to-emerald-500/5',icon:'↻',count:'9 retos'},
+ {name:'Funciones',tag:'04',desc:'Divide y vencerás',color:'from-fuchsia-500/20 to-pink-500/5',icon:'ƒ',count:'6 retos'}
+];

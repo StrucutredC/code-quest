@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#101225;color:#f5f6ff;font-family:'Space Grotesk',sans-serif}
+.grid-bg{background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:32px 32px}
+.panel{background:rgba(25,28,53,.88);border:1px solid rgba(148,163,184,.14);border-radius:18px}
+.mono{font-family:'DM Mono',monospace}.glow{box-shadow:0 0 35px rgba(139,92,246,.18)}
+button{transition:transform .16s ease,filter .16s ease}button:hover{filter:brightness(1.12)}button:active{transform:scale(.98)}
